@@ -5,8 +5,8 @@
 Projekt przedstawia symulację przejazdu autobusów przez wąski most. Program zarządza różnymi etapami podróży autobusu, od wsiadania pasażerów, przez przejazd przez most, aż po rozładunek pasażerów na parkingu. Symulacja uwzględnia różne stany, w których może znajdować się autobus, oraz ograniczenia ruchu na moście, takie jak liczba autobusów, które mogą jednocześnie przejeżdżać przez most.
 
 ## Użyte narzędzia i biblioteki
-Java Development Kit (JDK) - używane do kompilacji i uruchamiania aplikacji.
-Swing - używane do implementacji interfejsu graficznego aplikacji (do rysowania autobusów na ekranie).
+- Java Development Kit (JDK) - używane do kompilacji i uruchamiania aplikacji.
+- Swing - używane do implementacji interfejsu graficznego aplikacji (do rysowania autobusów na ekranie).
 
 ## Struktura plików
 
