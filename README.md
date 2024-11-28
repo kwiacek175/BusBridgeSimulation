@@ -10,3 +10,13 @@ Projekt przedstawia symulację przejazdu autobusów przez wąski most. Program z
 - **BusStatus.java** - Typ wyliczeniowy `BusStatus`, który definiuje różne stany, przez które przechodzi autobus podczas swojej podróży.
 - **BusDirection.java** - Typ wyliczeniowy `BusDirection`, który definiuje kierunek jazdy autobusu.
 - **Bus.java** - Klasa `Bus`, która implementuje główną logikę symulacji przejazdu autobusu przez most. Zawiera różne metody, takie jak wsiadanie pasażerów, przejazd przez most, dojazd do parkingu i rozładunek pasażerów.
+- **NarrowBridgeSimulation.java** - Klasa zarządzająca ruchem autobusów na moście. Określa, jak wiele autobusów może jednocześnie przejeżdżać przez most i synchronizuje ich przejazdy.
+- **NarrowBridgeAnimation.java** - Klasa odpowiedzialna za wizualizację symulacji. Rysuje autobusy na ekranie, umożliwiając śledzenie ich ruchu przez most.
+
+## Funkcje aplikacji
+
+- **Zarządzanie przejazdem autobusu** - Program śledzi ruch autobusów, które przejeżdżają przez most, uwzględniając różne stany, takie jak wsiadanie pasażerów, przejazd przez most, zjazd z mostu i rozładunek pasażerów.
+- **Synchronizacja ruchu** - Program zapewnia, że tylko określona liczba autobusów może jednocześnie przejeżdżać przez most, w zależności od limitu ruchu.
+- **Zarządzanie stanami autobusu** - Każdy autobus przechodzi przez różne stany, od wsiadania pasażerów, przez przejazd mostu, aż po rozładunek pasażerów na parkingu.
+- **Rysowanie symulacji** - Program rysuje autobusy na ekranie, umożliwiając wizualne śledzenie ruchu.
+
