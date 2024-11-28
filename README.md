@@ -1,29 +1,12 @@
-# Traffic Simulation System
+# Symulacja przejazdu autobusów przez wąski most
 
-## Opis
+## Opis projektu
 
-**Traffic Simulation System** to zaawansowany symulator ruchu drogowego, który umożliwia wizualizację pojazdów poruszających się po torze okrężnym oraz kolizyjnym. Projekt został zaprojektowany w celu realistycznego odwzorowania ruchu drogowego z uwzględnieniem synchronizacji wątków, interakcji pojazdów z skrzyżowaniami i torami kolizyjnymi oraz unikania kolizji. Wykorzystuje mechanizmy wielowątkowości i synchronizacji, aby symulacja była płynna i realistyczna.
+Projekt przedstawia symulację przejazdu autobusów przez wąski most. Program zarządza różnymi etapami podróży autobusu, od wsiadania pasażerów, przez przejazd przez most, aż po rozładunek pasażerów na parkingu. Symulacja uwzględnia różne stany, w których może znajdować się autobus, oraz ograniczenia ruchu na moście, takie jak liczba autobusów, które mogą jednocześnie przejeżdżać przez most.
 
-## Funkcjonalności
+## Struktura plików
 
-- **Rysowanie toru**: Wizualizacja torów okrężnego i kolizyjnego, gdzie pojazdy poruszają się w zależności od prędkości i przyspieszenia.
-- **Pojazdy**: Pojazdy mogą zmieniać swoją prędkość, przyspieszenie oraz reagować na różne wydarzenia na torze, jak np. zmiana pasa ruchu czy interakcje z innymi pojazdami.
-- **Synchronizacja**: Mechanizm synchronizacji umożliwia uniknięcie kolizji na skrzyżowaniach i torach. Każdy pojazd w symulacji jest odpowiednio zsynchronizowany z innymi, co zapobiega zderzeniom.
-- **Wielowątkowość**: Symulacja wykorzystuje wątki, aby każdy pojazd i proces rysowania działały równolegle, zapewniając płynność ruchu.
-- **Zarządzanie pojazdami kolizyjnymi**: Pojazdy poruszające się po torze kolizyjnym mogą wchodzić w interakcje z innymi pojazdami, co wpływa na dynamikę symulacji.
-
-## Wymagania
-
-- **System operacyjny**: Linux lub inny system operacyjny wspierający bibliotekę `ncurses`.
-- **Biblioteki**:
-  - `ncurses` – biblioteka do obsługi tekstowego interfejsu użytkownika (GUI) i wyświetlania na ekranie.
-  - `pthread` – biblioteka do obsługi wątków w celu zapewnienia równoczesnego działania różnych elementów symulacji.
-
-## Jak uruchomić
-
-### 1. Klonowanie repozytorium
-
-Aby rozpocząć korzystanie z projektu, sklonuj repozytorium:
-
-```bash
-git clone https://github.com/yourusername/traffic-simulation-system.git
+- **TrafficLimit.java** - Typ wyliczeniowy `TrafficLimit`, który określa dostępne limity ruchu na moście.
+- **BusStatus.java** - Typ wyliczeniowy `BusStatus`, który definiuje różne stany, przez które przechodzi autobus podczas swojej podróży.
+- **BusDirection.java** - Typ wyliczeniowy `BusDirection`, który definiuje kierunek jazdy autobusu.
+- **Bus.java** - Klasa `Bus`, która implementuje główną logikę symulacji przejazdu autobusu przez most. Zawiera różne metody, takie jak wsiadanie pasażerów, przejazd przez most, dojazd do parkingu i rozładunek pasażerów.
